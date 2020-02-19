@@ -34,7 +34,7 @@ function processToken(token: string) {
 
 function validatePreconditions() {
     const exists = fs.existsSync(rcFilePath)
-    const size = fs.statSync(rcFilePath).size
+    const size = exists ? fs.statSync(rcFilePath).size : 0
     if (exists && size)
         exitWithMessage('The .npmrc file already exists and contains configuration. Exiting..')
 
