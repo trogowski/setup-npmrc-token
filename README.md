@@ -32,7 +32,7 @@ npm i setup-npmrc-token --save-dev
 Add NPM script to make things easier for your team
 ```
   "scripts": {
-    "setup-npm-registry": "node node_modules/setup-npmrc-token/dist/index.js --template=tasks/repo/rc-template"
+    "setup-npm-registry": "npx setup-npmrc-token --template=tasks/repo/rc-template"
   },
 ```
 
