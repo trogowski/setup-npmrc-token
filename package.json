@@ -1,11 +1,11 @@
 {
   "name": "setup-npmrc-token",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Setup user NPM configuration from template",
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "tsc -p . && chmod +x dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tim Rogowski",
